@@ -1,11 +1,11 @@
 import data from "./../public/data";
 import { useRouter } from "next/router";
 
-function showPost() {
+function showPost({object}) {
   const router = useRouter();
   const { id } = router.query;
 
-  const object = data.find((obj) => obj.id == id);
+  
 
   return (
     <div className="d-flex justify-content-center">
@@ -18,6 +18,14 @@ function showPost() {
       </div>
     </div>
   );
+}
+
+export async function getServerSideProps({params}) {
+  // Fetch data from external API
+  const object = data.find((obj) => obj.id == params.id);
+
+  // Pass data to the page via props
+  return { props: { object } }
 }
 
 export default showPost;
