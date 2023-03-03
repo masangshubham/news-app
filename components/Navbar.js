@@ -18,7 +18,7 @@ function Navbar() {
           <a class="nav-link active" aria-current="page" target="_blank" href="https://github.com/masangshubham">GitHub</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" target="_blank" href="https://github.com/masangshubham">Code</a>
+          <a class="nav-link active" aria-current="page" target="_blank" href="https://github.com/masangshubham/news-app">Code</a>
         </li>
        
       </ul>
