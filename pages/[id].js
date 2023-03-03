@@ -9,8 +9,8 @@ function showPost() {
 
   return (
     <div className="d-flex justify-content-center">
-      <div class=" justify-content-center m-4 w-50">
-        <img src={object.imgURL} class="w-75 mx-auto d-block " />
+      <div class=" justify-content-center m-4 w-75 ">
+        <img src={object.imgURL} class="w-50 mx-auto d-block " />
         <div class="">
           <h5 class="text-center">{object.title}</h5>
           <p class="">{object.content}</p>
